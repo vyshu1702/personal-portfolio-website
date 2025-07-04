@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .resume-btn {
+      background: #00eaff;
+      color: #181924;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 0.5rem 1.5rem;
+      margin-right: 1rem;
+      box-shadow: 0 2px 8px 0 #0a0a13;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      border: none;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portfolio<span class="accent">.</span></div>
+      <ul>
+        <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#portfolio"><i class="fas fa-laptop-code"></i> Projects</a></li>
+        <li><a href="#achievements"><i class="fas fa-medal"></i> Achievements</a></li>
+        <li><a href="#certifications"><i class="fas fa-award"></i> Certifications</a></li>
+        <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero Section: Unique Modern Design -->
+    <section id="home" class="hero-section hero-card-bg">
+      <div class="hero-left">
+        <h1>
+          <span class="accent">Hi, I'm</span><br>
+          <span class="hero-name">Mogulluru Vyshnavi</span>
+        </h1>
+        <h2 class="hero-tagline">Java and Web Developer</h2>
+        <p class="hero-desc">I'm a passionate frontend developer who loves building interactive, user-focused websites and apps. Let's make something amazing together!</p>
+        <div class="hero-socials">
+          <a href="Vyshnavi_Mogulluru_Resume[2].docx" class="resume-btn"><i class="fas fa-download"></i> Resume</a>
+          <a href="https://github.com/vyshu1702" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/vyshnavi-mogulluru-258179277/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <a href="#portfolio" class="btn-accent hero-cta">See My Work</a>
+      </div>
+      <div class="hero-right">
+        <img class="simple-circle-img" src="photo1.jpg"Profile Photo">
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="about-right">
+        <!-- Placeholder for the removed paragraph -->
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill-item" 
+          data-skill="Java"
+          data-concepts="Variables and Data Types, Control Structures, Arrays, Strings, Methods, Classes and Objects, Inheritance, Polymorphism, Exception Handling, File I/O">
+          <i class="fab fa-java"></i> Java
+        </div>
+        <div class="skill-item"
+          data-skill="HTML"
+          data-concepts="HTML Structure, Headings and Paragraphs, Links and Images, Lists and Tables, Forms and Inputs, Semantic Tags, Meta Tags, Comments, Basic Attributes, HTML Validation">
+          <i class="fab fa-html5"></i> HTML
+        </div>
+        <div class="skill-item"
+          data-skill="CSS"
+          data-concepts="Selectors and Properties, Box Model, Colors and Backgrounds, Text Styling, Layout Basics, Flexbox, Media Queries, Pseudo-classes, CSS Units, Basic Animations">
+          <i class="fab fa-css3-alt"></i> CSS
+        </div>
+        <div class="skill-item"
+          data-skill="SQL"
+          data-concepts="DDL (Data Definition Language), DML (Data Manipulation Language), SELECT Queries, WHERE Clauses, INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN, GROUP BY, ORDER BY, Basic Functions, Table Creation, Data Types">
+          <i class="fas fa-database"></i> SQL
+        </div>
+        <div class="skill-item"
+          data-skill="DSA"
+          data-concepts="Arrays and Strings, Linked Lists, Stacks and Queues, Trees and Graphs, Sorting Algorithms, Searching Algorithms, Dynamic Programming, Recursion, Time Complexity, Space Complexity">
+          <i class="fas fa-code"></i> DSA
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+      <h2>Latest <span class="accent">Project</span></h2>
+      <div class="portfolio-container">
+        <button class="scroll-arrow scroll-left" id="projectScrollLeft">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="portfolio-grid" id="portfolioGrid">
+          <div class="portfolio-card"
+            data-title="Personal Finance Tracker"
+            data-objective="Developed a web application to track and manage personal finances. Used HTML, CSS, JavaScript, and SQL to record and display user expenditure data. Enhanced user budget awareness through clear visual breakdowns of spending. Practiced problem-solving, debugging, and database integration."
+            data-tech="HTML, CSS, JavaScript, SQL"
+            data-github="https://github.com/vyshu1702/personal-finance-tracker"
+            data-website="https://vyshu1702.github.io/personal-finance-tracker/signup.html"
+          >
+            <img src="b.avif" alt="Personal Finance Tracker">
+            <div class="project-meta">
+              <h3>Personal Finance Tracker</h3>
+              <a href="#" class="project-details-link">Project Details</a>
+            </div>
+          </div>
+          <div class="portfolio-card"
+            data-title="Personal Portfolio Website"
+            data-objective="Developed a personal portfolio website to showcase projects and skills. Implemented a modern, responsive design. Integrated smooth navigation and interactive project modals. Enhanced user experience with animations and accessibility features."
+            data-tech="HTML, CSS, JavaScript, Responsive Design, Accessibility"
+            data-github="https://github.com/vyshu1702/Personal_portfolio_website.git"
+            data-website="https://vyshu1702.github.io/Personal_portfolio_website/"
+          >
+            <img src="project 2.png" alt="Personal Portfolio Website">
+            <div class="project-meta">
+              <h3>Personal Portfolio Website</h3>
+              <a href="#" class="project-details-link">Project Details</a>
+            </div>
+          </div>
+          <div class="portfolio-card"
+            data-title="Project Three"
+            data-objective="An e-commerce landing page with product showcase and cart."
+            data-tech="Vue.js, Firebase, Stripe API"
+            data-github="https://github.com/yourusername/project3"
+            data-website="https://project3.example.com"
+          >
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Project">
+            <div class="project-meta">
+              <h3>Project Three</h3>
+              <a href="#" class="project-details-link">Project Details</a>
+            </div>
+          </div>
+        </div>
+        <button class="scroll-arrow scroll-right" id="projectScrollRight">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+      <h2>Achievements</h2>
+      <div class="achievements-container">
+        <button class="scroll-arrow scroll-left" id="scrollLeft">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="achievements-cards" id="achievementsCards">
+        <div class="achievement-card">
+          <img src="c.jpg" alt="Top Performer Award" class="achievement-img">
+          <h3>Conducted a workshop on SQL</h3>
+          <p>Proven teamwork and communication skills through technical workshops and group projects.</p>
+        </div>
+        <div class="achievement-card">
+          <img src="ceta.jpg" alt="Hackathon Winner" class="achievement-img">
+          <h3>CETA Club Member</h3>
+          <p>Active member of CETA association , contributing to technical events and workshops</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <img src="https://leetcode.com/static/images/LeetCode_logo_rvs.png" alt="LeetCode Logo" style="width: 50px; height: 50px; object-fit: contain;">
+          </div>
+          <h3>LeetCode</h3>
+          <p>Solved 150+ problems across various difficulty levels. Strong problem-solving skills in Data Structures and Algorithms.</p>
+          <a href="https://leetcode.com/u/vyshu_1702/" target="_self" class="achievement-link">
+            <i class="fas fa-external-link-alt"></i> View Profile
+          </a>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fab fa-hackerrank"></i>
+          </div>
+          <h3>HackerRank</h3>
+          <p>Completed challenges in Java, Problem Solving, and SQL. Demonstrated proficiency in multiple programming domains.</p>
+          <a href="https://www.hackerrank.com/mogulluruvyshu" target="_self" class="achievement-link">
+            <i class="fas fa-external-link-alt"></i> View Profile
+          </a>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3>CodeChef</h3>
+          <p>Participated in competitive programming contests. Achieved consistent ratings and solved complex algorithmic problems.</p>
+          <a href="https://www.codechef.com/users/vyshu_m_17" target="_self" class="achievement-link">
+            <i class="fas fa-external-link-alt"></i> View Profile
+          </a>
+        </div>
+        </div>
+        <button class="scroll-arrow scroll-right" id="scrollRight">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+      <h2>Certifications</h2>
+      <div class="certifications-container">
+        <button class="scroll-arrow scroll-left" id="certScrollLeft">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="certifications-cards" id="certificationsCards">
+          <div class="certification-card">
+            <h3>Frontend Developer</h3>
+            <p>Issued by Infosys Springboard</p>
+            <a href="front end web developer.jpg" target="_self" class="cert-link">View Certificate</a>
+          </div>
+          <div class="certification-card">
+            <h3>Java Course [Udemy]</h3>
+            <p>Issued by Udemy</p>
+            <a href="udemy-java.jpg" target="_self" class="cert-link">View Certificate</a>
+          </div>
+          <div class="certification-card">
+            <h3>HackerRank Java Certification</h3>
+            <p>Issued by HackerRank</p>
+            <a href="java_basic certificate.jpg" target="_self" class="cert-link">View Certificate</a>
+          </div>
+          <div class="certification-card">
+            <h3>Oracle Cloud Infrastructure Foundations Associate</h3>
+            <p>Issued by Oracle</p>
+            <a href="oracle certificate.pdf" target="_self" class="cert-link">View Certificate</a>
+          </div>
+          <div class="certification-card">
+            <h3>Responsive Web Design</h3>
+            <p>Issued by Udemy</p>
+            <a href="#" target="_self" class="cert-link">View Certificate</a>
+          </div>
+        </div>
+        <button class="scroll-arrow scroll-right" id="certScrollRight">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022-2026</span>
+            <h3>B.Tech in Computer Science & Engineering</h3>
+            <p><strong>Mohan Babu University, Andhra Pradesh | CGPA: 9.5</strong></p>
+            <p>Currently pursuing Computer Science & Engineering with focus on Data Structures, Algorithms, Database Management Systems, and Web Development. Active member of technical clubs and participating in coding competitions.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2020-2022</span>
+            <h3>Intermediate (MPC)</h3>
+            <p><strong>Sri Chaitanya Junior College, Andhra Pradesh | CGPA: 9.7</strong></p>
+            <p>Completed Mathematics, Physics, and Computer Science with distinction. Developed strong foundation in logical thinking and problem-solving skills. Participated in science exhibitions and academic competitions.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2019-2020</span>
+            <h3>Secondary School Certificate (SSC)</h3>
+            <p><strong>A.P.R. School, Andhra Pradesh | CGPA: 9.7</strong></p>
+            <p>Graduated with outstanding academic performance. Demonstrated excellence in Mathematics and Science subjects. Active participation in school events and leadership roles in student organizations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact <span class="accent">Me!</span></h2>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+          <input type="email" id="email" name="email" placeholder="Email Address" required>
+        </div>
+        <div class="form-row">
+          <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number">
+          <input type="text" id="subject" name="subject" placeholder="Email Subject" required>
+        </div>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-accent">Send Message</button>
+      </form>
+      <div id="contactSuccess" class="contact-success" style="display: none;">
+        <i class="fas fa-check-circle"></i>
+        <p>Thank you! Your message has been sent successfully.</p>
+      </div>
+      <div id="contactError" class="contact-error" style="display: none;">
+        <i class="fas fa-exclamation-circle"></i>
+        <p>Sorry! There was an error sending your message. Please try again.</p>
+      </div>
+    </section>
+  </main>
+  <!-- Project Modal -->
+  <div class="project-modal-overlay" id="projectModal">
+    <div class="project-modal">
+      <button class="close-btn" id="closeModal">&times;</button>
+      <h3 id="modalTitle"></h3>
+      <span class="modal-heading">Objective</span>
+      <p id="modalDesc"></p>
+      <ul class="modal-points">
+        <li>Responsive design for all devices</li>
+        <li>Secure user authentication</li>
+        <li>Real-time data visualization</li>
+      </ul>
+      <div style="margin: 1rem 0;">
+        <span class="modal-heading">Technologies</span>
+        <ul id="modalTechList" class="modal-points"></ul>
+      </div>
+      <div style="display: flex; gap: 1.2rem; margin-top: 1.2rem;">
+        <a id="modalGithub" href="#" target="_self" style="color:#fff;background:#23243a;padding:0.6rem 1.2rem;border-radius:6px;text-decoration:none;font-weight:600;"><i class="fab fa-github"></i> GitHub</a>
+        <a id="modalWebsite" href="#" target="_self" style="color:#fff;background:#00eaff;padding:0.6rem 1.2rem;border-radius:6px;text-decoration:none;font-weight:600;"><i class="fas fa-external-link-alt"></i> Website</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Skills Modal -->
+  <div class="skills-modal-overlay" id="skillsModal">
+    <div class="skills-modal">
+      <button class="close-btn" id="closeSkillsModal">&times;</button>
+      <h3 id="skillTitle"></h3>
+      <div class="skill-concepts">
+        <h4 class="concepts-heading">Key Concepts</h4>
+        <ul id="skillConceptsList"></ul>
+      </div>
+    </div>
+  </div>
+  <script>
+    const projectCards = document.querySelectorAll('.portfolio-card');
+    const modal = document.getElementById('projectModal');
+    const closeModalBtn = document.getElementById('closeModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDesc = document.getElementById('modalDesc');
+    const modalTechList = document.getElementById('modalTechList');
+    const modalGithub = document.getElementById('modalGithub');
+    const modalWebsite = document.getElementById('modalWebsite');
+
+    function openProjectModal(card) {
+      const title = card.getAttribute('data-title');
+      const objective = card.getAttribute('data-objective');
+      const tech = card.getAttribute('data-tech');
+      const github = card.getAttribute('data-github');
+      const website = card.getAttribute('data-website');
+      if (title && objective && tech && github && website) {
+        modalTitle.textContent = title;
+        let points = objective.split(/\\.|;/).map(s => s.trim()).filter(Boolean);
+        if (points.length > 1) {
+          modalDesc.innerHTML = '<ul style="margin-left:1.2em;">' + points.map(p => `<li>${p}</li>`).join('') + '</ul>';
+        } else {
+          modalDesc.textContent = objective;
+        }
+        modalTechList.innerHTML = tech.split(',').map(t => `<li>${t.trim()}</li>`).join('');
+        modalGithub.href = github;
+        modalWebsite.href = website;
+        modal.classList.add('active');
+      }
+    }
+
+    projectCards.forEach(card => {
+      card.addEventListener('click', function(e) {
+        // Only open modal if not clicking a link
+        if (!e.target.classList.contains('project-details-link')) {
+          openProjectModal(card);
+        }
+      });
+      const detailsLink = card.querySelector('.project-details-link');
+      if (detailsLink) {
+        detailsLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          openProjectModal(card);
+        });
+      }
+    });
+
+    closeModalBtn.addEventListener('click', function() {
+      modal.classList.remove('active');
+    });
+    window.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+      }
+    });
+
+    // Achievements scroll arrows
+    const achievementsCards = document.getElementById('achievementsCards');
+    const scrollLeftBtn = document.getElementById('scrollLeft');
+    const scrollRightBtn = document.getElementById('scrollRight');
+    if (achievementsCards && scrollLeftBtn && scrollRightBtn) {
+      scrollLeftBtn.addEventListener('click', () => {
+        achievementsCards.scrollBy({ left: -360, behavior: 'smooth' });
+      });
+      scrollRightBtn.addEventListener('click', () => {
+        achievementsCards.scrollBy({ left: 360, behavior: 'smooth' });
+      });
+    }
+
+    // Certifications scroll arrows
+    const certificationsCards = document.getElementById('certificationsCards');
+    const certScrollLeftBtn = document.getElementById('certScrollLeft');
+    const certScrollRightBtn = document.getElementById('certScrollRight');
+    if (certificationsCards && certScrollLeftBtn && certScrollRightBtn) {
+      certScrollLeftBtn.addEventListener('click', () => {
+        certificationsCards.scrollBy({ left: -360, behavior: 'smooth' });
+      });
+      certScrollRightBtn.addEventListener('click', () => {
+        certificationsCards.scrollBy({ left: 360, behavior: 'smooth' });
+      });
+    }
+
+    // Portfolio scroll arrows
+    const portfolioGrid = document.getElementById('portfolioGrid');
+    const projectScrollLeftBtn = document.getElementById('projectScrollLeft');
+    const projectScrollRightBtn = document.getElementById('projectScrollRight');
+    if (portfolioGrid && projectScrollLeftBtn && projectScrollRightBtn) {
+      projectScrollLeftBtn.addEventListener('click', () => {
+        portfolioGrid.scrollBy({ left: -360, behavior: 'smooth' });
+      });
+      projectScrollRightBtn.addEventListener('click', () => {
+        portfolioGrid.scrollBy({ left: 360, behavior: 'smooth' });
+      });
+    }
+
+    // Skills Modal Functionality
+    const skillItems = document.querySelectorAll('.skill-item');
+    const skillsModal = document.getElementById('skillsModal');
+    const closeSkillsModalBtn = document.getElementById('closeSkillsModal');
+    const skillTitle = document.getElementById('skillTitle');
+    const skillConceptsList = document.getElementById('skillConceptsList');
+
+    function openSkillsModal(skillItem) {
+      const skill = skillItem.getAttribute('data-skill');
+      const concepts = skillItem.getAttribute('data-concepts');
+      
+      if (skill && concepts) {
+        skillTitle.textContent = skill;
+        const conceptsArray = concepts.split(', ');
+        skillConceptsList.innerHTML = conceptsArray.map(concept => `<li>${concept}</li>`).join('');
+        skillsModal.classList.add('active');
+      }
+    }
+
+    skillItems.forEach(item => {
+      item.addEventListener('click', () => {
+        openSkillsModal(item);
+      });
+    });
+
+    closeSkillsModalBtn.addEventListener('click', () => {
+      skillsModal.classList.remove('active');
+    });
+
+    window.addEventListener('click', function(e) {
+      if (e.target === skillsModal) {
+        skillsModal.classList.remove('active');
+      }
+    });
+
+    // Contact form functionality
+    const contactForm = document.getElementById('contactForm');
+    const contactSuccess = document.getElementById('contactSuccess');
+    const contactError = document.getElementById('contactError');
+    
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(contactForm);
+        const fullName = formData.get('fullName');
+        const email = formData.get('email');
+        const mobile = formData.get('mobile');
+        const subject = formData.get('subject');
+        const message = formData.get('message');
+        
+        // Create mailto link
+        const mailtoLink = `mailto:mogulluruvyshnavi@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${fullName}\nEmail: ${email}\nMobile: ${mobile}\n\nMessage:\n${message}`)}`;
+        
+        // Try to open default email client
+        try {
+          window.location.href = mailtoLink;
+          
+          // Show success message
+          contactSuccess.style.display = 'flex';
+          contactError.style.display = 'none';
+          contactForm.reset();
+          
+          // Hide success message after 5 seconds
+          setTimeout(() => {
+            contactSuccess.style.display = 'none';
+          }, 5000);
+          
+        } catch (error) {
+          // Show error message if mailto fails
+          contactError.style.display = 'flex';
+          contactSuccess.style.display = 'none';
+          
+          // Hide error message after 5 seconds
+          setTimeout(() => {
+            contactError.style.display = 'none';
+          }, 5000);
+        }
+      });
+    }
+  </script>
+</body>
+</html> 
